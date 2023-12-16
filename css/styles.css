@@ -1,0 +1,187 @@
+:root {
+  /* fonts */
+  --logo-font: "Raleway", sans-serif;
+  --primary-font: "Roboto", sans-serif;
+  /* colors */
+  --brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --title-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --helper-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-mode-backgrounds: #f4f4fd;
+  --modal-overlay: #2e2f4266;
+  --hero-background-color: #2e2f42b2;
+  --primary-background-color: #ffffff;
+  --modal-background-color: #fcfcfc;
+}
+
+.invisible {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  pointer-events: none;
+}
+
+.btn{
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: var(--title-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: calc(24 / 16);
+  letter-spacing: 0.02em;
+
+  color: var(--text-color);
+}
+
+/* HEADER */
+
+.nav-link {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--pressed-state-color);
+}
+
+.logo {
+  color: inherit;
+  font-family: var(--logo-font);
+  font-weight: 800; 
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--brand-color);
+}
+
+.contacts {
+  color: var(--text-color);
+}
+
+.contacts:hover {
+  color: var(--pressed-state-color);
+}
+
+/* STUDIO */
+
+.hero {
+  text-align: center;
+
+  background-color: var(--title-color);
+}
+
+.hero-title {
+  color: var(--primary-background-color);
+}
+
+.title-1 {
+  font-size: 56px;
+  letter-spacing: 0.02em;
+}
+
+.title-2 {
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-transform: capitalize;
+}
+
+.title-3 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: calc(24 / 20);
+}
+
+.hero-button {
+  color: var(--primary-background-color);
+  background-color: var(--brand-color);
+}
+
+.hero-button:hover {
+  background-color: var(--pressed-state-color);
+}
+
+.our-team{
+  background-color: var(--light-mode-backgrounds);
+}
+
+.our-team-title{
+  text-align: center;
+}
+
+.our-team-text{
+  text-align: center;
+}
+
+/* PRTFLIO */
+
+.portfolio-button{
+  color: var(--brand-color);
+  background-color: var(--light-mode-backgrounds);
+  border: 1px solid var(--accent-color);
+}
+
+.portfolio-button:hover {
+  background-color: var(--pressed-state-color); 
+  color: var(--primary-background-color);
+}
+
+.portfolio-text{
+  color: var(--text-color);
+}
+
+
+/* FOOTER */
+footer{
+  color: var(--light-mode-backgrounds);
+  background-color: var(--title-color);
+}
